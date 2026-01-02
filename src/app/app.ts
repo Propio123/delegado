@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { Footer } from './layout/footer/footer';
-import { Navbar, NavbarComponent } from './layout/navbar/navbar';
+import { NavbarComponent } from './layout/navbar/navbar';
 import { Hero } from "./sections/hero/hero";
 import { CookieBannerComponent } from "./shared/components/cookie-banner/cookie-banner";
 

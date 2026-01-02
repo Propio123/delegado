@@ -1,4 +1,7 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+<nav
+  class="navbar navbar-expand-lg fixed-top shadow-sm"
+  [ngClass]="menuOpen ? 'navbar-dark bg-dark' : 'navbar-light bg-transparent'"
+>
   <div class="container">
 
     <!-- LOGO -->
@@ -7,40 +10,46 @@
       <span>DPO Ecuador</span>
     </a>
 
-    <!-- TOGGLER MOBILE -->
+    <!-- TOGGLER -->
     <button
-      class="navbar-toggler"
+      class="navbar-toggler border-0"
       type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#mainNavbar"
+      (click)="toggleMenu()"
     >
-      <span class="navbar-toggler-icon"></span>
+      <i
+        class="bi fs-2"
+        [ngClass]="menuOpen ? 'bi-x-lg text-white' : 'bi-list text-white'"
+      ></i>
     </button>
 
-    <!-- LINKS -->
-    <div class="collapse navbar-collapse" id="mainNavbar">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-3">
+  </div>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#inicio">Inicio</a>
-        </li>
+  <!-- MENÚ MOBILE -->
+  <div
+    class="navbar-collapse mobile-menu"
+    [class.show]="menuOpen"
+  >
+    <ul class="navbar-nav text-center py-4 gap-3">
 
-        <li class="nav-item">
-          <a class="nav-link" href="#perfil">Perfil</a>
-        </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" (click)="scrollTo('inicio')">Inicio</a>
+      </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#servicios">Servicios</a>
-        </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" (click)="scrollTo('perfil')">Perfil</a>
+      </li>
 
-        <li class="nav-item">
-          <a class="btn btn-primary ms-lg-3" href="#contacto">
-            Contactar
-          </a>
-        </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" (click)="scrollTo('servicios')">Servicios</a>
+      </li>
 
-      </ul>
-    </div>
+      <li class="nav-item">
+        <a class="btn btn-primary mt-3" (click)="scrollTo('contacto')">
+          Contactar
+        </a>
+      </li>
 
+    </ul>
   </div>
 </nav>
+

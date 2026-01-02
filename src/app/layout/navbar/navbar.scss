@@ -1,20 +1,33 @@
 .navbar {
-  height: 72px;
-  z-index: 1030;
+  transition: background-color 0.3s ease;
 }
 
-.navbar-brand span {
-  font-size: 1rem;
-  color: #1f2937; /* gris oscuro legible */
+/* MENÚ MOBILE OVERLAY */
+.mobile-menu {
+  background-color: #212529; // bg-dark
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1050;
+  display: none;
 }
 
-.nav-link {
-  color: #374151;
-  font-weight: 500;
+.mobile-menu.show {
+  display: block;
 }
 
-.nav-link:hover {
-  color: #2563eb;
+/* Desktop: usar comportamiento normal */
+@media (min-width: 992px) {
+  .mobile-menu {
+    position: static;
+    background: transparent;
+    display: flex !important;
+  }
+
+  .navbar-light {
+    background-color: white !important;
+  }
 }
 
 .btn-primary {
