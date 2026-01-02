@@ -1,0 +1,40 @@
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #fff;
+  padding-top: 100px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+
+  span {
+    display: block;
+    font-weight: 400;
+    opacity: 0.9;
+  }
+}
+
+.hero-subtitle {
+  margin: 1.5rem 0;
+  font-size: 1.2rem;
+  
+}
+
+.hero-actions {
+  margin-top: 2rem;
+}
+
+.hero-img {
+  max-width: 100%;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+

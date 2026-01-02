@@ -1,1 +1,86 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --color-bg-light: #f9fafb;        /* blanco suave */
+  --color-bg-card: #ffffff;
+  --color-primary: #2563eb;         /* azul confianza */
+  --color-text-dark: #0f172a;       /* slate-900 */
+  --color-text-muted: #101011af;      /* slate-600 */
+}
+
+:root {
+  --font-primary: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+:root {
+  --btn-primary-bg: #2563eb;      /* blue-600 */
+  --btn-primary-hover: #1d4ed8;   /* blue-700 */
+  --btn-primary-text: #ffffff;
+
+  --btn-secondary-bg: #e5e7eb;    /* gray-200 */
+  --btn-secondary-hover: #d1d5db; /* gray-300 */
+  --btn-secondary-text: #1f2937;  /* gray-800 */
+}
+.btn {
+  border-radius: 0.75rem; /* 12px */
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.25s ease;
+}
+.btn-primary {
+  background-color: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.25);
+}
+
+.btn-primary:hover {
+  background-color: var(--btn-primary-hover);
+  transform: translateY(-2px);
+}
+.btn-secondary {
+  background-color: var(--btn-secondary-bg);
+  color: var(--btn-secondary-text);
+}
+
+.btn-secondary:hover {
+  background-color: var(--btn-secondary-hover);
+}
+
+
+body {
+    padding-top: 10px;
+  font-family: var(--font-primary);
+  background-color: var(--color-bg-light);
+  color: var(--color-text-dark);
+}
+
+p {
+  max-width: 65ch;   /* evita líneas largas */
+}
+h1, h2, h3 {
+  color: var(--color-text-Light-first);
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+h1 {
+  font-size: 2.75rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--color-text-muted);
+}
+

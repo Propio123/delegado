@@ -1,3 +1,7 @@
 [build]
   command = "npm run build"
-  publish = "dist/dpo-landing/browser"
+  publish = "dist/dpo-landing"
+
+# ⚠️ IMPORTANTE: desactivar Angular Runtime
+[[plugins]]
+  package = "@netlify/plugin-sitemap"

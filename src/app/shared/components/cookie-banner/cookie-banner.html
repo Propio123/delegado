@@ -1,0 +1,18 @@
+<div class="cookie-banner" *ngIf="!accepted">
+  <div class="container d-flex flex-column flex-md-row align-items-center gap-3">
+
+    <p class="mb-0 text-muted flex-grow-1">
+      Usamos cookies necesarias para garantizar el correcto funcionamiento del sitio.
+      No utilizamos cookies publicitarias.
+      <a routerLink="/politica" class="text-primary text-decoration-underline">
+  Ver política
+</a>
+
+    </p>
+
+    <button class="btn btn-primary" (click)="acceptCookies()">
+      Aceptar
+    </button>
+
+  </div>
+</div>
