@@ -9,13 +9,14 @@ import {
 } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { ServiceCardComponent } from '../../shared/components/service-card/service-card';
+import { Hero } from "../../sections/hero/hero";
 
 
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, ServiceCardComponent],
+  imports: [CommonModule, ServiceCardComponent, Hero],
   templateUrl: './home.html',
   styleUrls: ['./home.scss']
 })

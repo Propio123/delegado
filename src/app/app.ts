@@ -5,6 +5,7 @@ import { Footer } from './layout/footer/footer';
 import { NavbarComponent } from './layout/navbar/navbar';
 import { Hero } from "./sections/hero/hero";
 import { CookieBannerComponent } from "./shared/components/cookie-banner/cookie-banner";
+import { PoliticaComponent } from "./pages/politica/politica";
 
 @Component({
   selector: 'app-root',
@@ -13,7 +14,6 @@ import { CookieBannerComponent } from "./shared/components/cookie-banner/cookie-
     RouterOutlet,
     NavbarComponent,
     Footer,
-    Hero,
     CookieBannerComponent
 ],
   templateUrl: './app.html',
