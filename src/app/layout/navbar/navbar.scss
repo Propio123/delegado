@@ -1,36 +1,27 @@
 .navbar {
   transition: background-color 0.3s ease;
-}
-
-/* MENÚ MOBILE OVERLAY */
-.mobile-menu {
-  background-color: #212529; // bg-dark
-  width: 100%;
-  position: absolute;
-  top: 100%;
-  left: 0;
   z-index: 1050;
-  display: none;
 }
 
-.mobile-menu.show {
-  display: block;
+/* MOBILE: menú con fondo sólido */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: #212529; // bg-dark
+    padding-bottom: 1rem;
+  }
+
+  .nav-link {
+    color: #fff !important;
+  }
 }
 
-/* Desktop: usar comportamiento normal */
+/* DESKTOP: Bootstrap normal */
 @media (min-width: 992px) {
-  .mobile-menu {
-    position: static;
+  .navbar-collapse {
     background: transparent;
-    display: flex !important;
   }
 
-  .navbar-light {
-    background-color: white !important;
+  .nav-link {
+    color: #212529 !important;
   }
 }
-
-.btn-primary {
-  padding: 0.5rem 1.25rem;
-}
-

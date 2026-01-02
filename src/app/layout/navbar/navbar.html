@@ -1,6 +1,6 @@
 <nav
   class="navbar navbar-expand-lg fixed-top shadow-sm"
-  [ngClass]="menuOpen ? 'navbar-dark bg-dark' : 'navbar-light bg-transparent'"
+  [ngClass]="menuOpen ? 'navbar-dark bg-dark' : 'navbar-light bg-white'"
 >
   <div class="container">
 
@@ -10,7 +10,7 @@
       <span>DPO Ecuador</span>
     </a>
 
-    <!-- TOGGLER -->
+    <!-- TOGGLER MOBILE -->
     <button
       class="navbar-toggler border-0"
       type="button"
@@ -18,38 +18,37 @@
     >
       <i
         class="bi fs-2"
-        [ngClass]="menuOpen ? 'bi-x-lg text-white' : 'bi-list text-white'"
+        [ngClass]="menuOpen ? 'bi-x-lg' : 'bi-list'"
       ></i>
     </button>
 
-  </div>
+    <!-- LINKS -->
+    <div
+      class="collapse navbar-collapse"
+      [class.show]="menuOpen"
+    >
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3 text-center">
 
-  <!-- MENÚ MOBILE -->
-  <div
-    class="navbar-collapse mobile-menu"
-    [class.show]="menuOpen"
-  >
-    <ul class="navbar-nav text-center py-4 gap-3">
+        <li class="nav-item">
+          <a class="nav-link" (click)="scrollTo('inicio'); closeMenu()">Inicio</a>
+        </li>
 
-      <li class="nav-item">
-        <a class="nav-link text-white" (click)="scrollTo('inicio')">Inicio</a>
-      </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="scrollTo('perfil'); closeMenu()">Perfil</a>
+        </li>
 
-      <li class="nav-item">
-        <a class="nav-link text-white" (click)="scrollTo('perfil')">Perfil</a>
-      </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="scrollTo('servicios'); closeMenu()">Servicios</a>
+        </li>
 
-      <li class="nav-item">
-        <a class="nav-link text-white" (click)="scrollTo('servicios')">Servicios</a>
-      </li>
+        <li class="nav-item">
+          <a class="btn btn-primary ms-lg-3" (click)="scrollTo('contacto'); closeMenu()">
+            Contactar
+          </a>
+        </li>
 
-      <li class="nav-item">
-        <a class="btn btn-primary mt-3" (click)="scrollTo('contacto')">
-          Contactar
-        </a>
-      </li>
+      </ul>
+    </div>
 
-    </ul>
   </div>
 </nav>
-
