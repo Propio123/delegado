@@ -1,0 +1,13 @@
+.navbar {
+  box-shadow: 0 2px 10px rgba(0,0,0,.15);
+}
+.navbar-logo {
+  height: 100px;
+  width: auto;
+}
+
+@media (max-width: 576px) {
+  .navbar-logo {
+    height: 30px;
+  }
+}

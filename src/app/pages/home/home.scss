@@ -1,0 +1,292 @@
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.hero {
+  min-height: 100vh;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+
+  background: linear-gradient(
+    135deg,
+    #1a73e8,
+    #0b3c91
+  );
+}
+.logo {
+  height: 200px;
+  width: auto;
+}
+
+
+
+.hero h1,
+.hero p,
+.hero a {
+  animation: fadeUp 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+.hero p {
+  animation-delay: 0.2s;
+}
+
+.hero a {
+  animation-delay: 0.4s;
+}
+.service-card {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+
+.service-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.perfil-section {
+  padding: 4rem 0;
+  background-color: #fff;
+}
+
+.perfil-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  background-color: #eef5ff;
+  border: 1px solid #dbeafe;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+.perfil-avatar {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  background-color: #e2e8f0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  i {
+    font-size: 3rem;
+    color: #94a3b8;
+  }
+}
+
+.perfil-content {
+  text-align: center;
+
+  @media (min-width: 768px) {
+    text-align: left;
+  }
+}
+
+.perfil-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.5rem;
+}
+
+.perfil-title {
+  font-weight: 600;
+  color: #1a73e8;
+  margin-bottom: 1rem;
+}
+
+.perfil-description {
+  color: #475569;
+  margin-bottom: 1.25rem;
+  line-height: 1.6;
+}
+
+.perfil-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+
+  @media (min-width: 768px) {
+    justify-content: flex-start;
+  }
+}
+
+.perfil-tag {
+  padding: 0.35rem 0.75rem;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  color: #475569;
+}
+.contact-section {
+  padding: 5rem 0;
+  background-color: #ffffff;
+}
+
+.contact-container {
+  max-width: 900px;
+}
+
+.contact-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 1.5rem;
+}
+
+.contact-subtitle {
+  font-size: 1.125rem;
+  color: #475569;
+  margin-bottom: 3rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 2rem;
+  border-radius: 1.5rem;
+  border: 2px solid #f1f5f9;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  background-color: #ffffff;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+/* ICONOS */
+.contact-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  transition: all 0.25s ease;
+
+  &.email {
+    background-color: #dbeafe;
+    color: #2563eb;
+  }
+
+  &.phone {
+    background-color: #dcfce7;
+    color: #16a34a;
+  }
+}
+
+/* Hover específico */
+.contact-card-email:hover {
+  border-color: #2563eb;
+  background-color: #eff6ff;
+
+  .contact-icon.email {
+    background-color: #2563eb;
+    color: #ffffff;
+  }
+}
+
+.contact-card-phone:hover {
+  border-color: #16a34a;
+  background-color: #f0fdf4;
+
+  .contact-icon.phone {
+    background-color: #16a34a;
+    color: #ffffff;
+  }
+}
+
+/* TEXTOS */
+.contact-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.contact-value {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-top: 0.25rem;
+}
+
+.contact-status {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: #16a34a;
+}
+
+.contact-action {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: #2563eb;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/* TOAST */
+.contact-toast {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background-color: #1e293b;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1050;
+
+  &.show {
+    opacity: 1;
+  }
+}

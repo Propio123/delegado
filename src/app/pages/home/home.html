@@ -1,0 +1,127 @@
+<!-- HERO -->
+<section id="inicio" class="hero text-white text-center">
+  <div class="container">
+    <img
+        src="assets/logo.jpeg"
+        alt="DPO Expert"
+        class="logo"
+      />
+    <h1 class="display-4 fw-bold">
+      Cumple con la Ley de Protección de Datos
+    </h1>
+
+    <p class="lead mt-3">
+      Evita sanciones y protege la confianza de tus clientes.
+    </p>
+
+    <a href="#contacto" class="btn btn-light btn-lg mt-4">
+      Contáctame ahora
+    </a>
+  </div>
+</section>
+
+
+<!-- SERVICIOS -->
+<section id="servicios" class="py-5">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5">Servicios</h2>
+
+  <section class="services container my-5">
+  <div class="row">
+    <div class="col-md-4" *ngFor="let service of services">
+      <app-service-card [service]="service"></app-service-card>
+    </div>
+  </div>
+</section>
+
+  </div>
+</section>
+
+<!-- Perfil Profesional -->
+   <section id="perfil" class="perfil-section">
+  <div class="container">
+    <div class="perfil-card">
+
+      <div class="perfil-avatar">
+        <i class="fa-solid fa-user-tie"></i>
+      </div>
+
+      <div class="perfil-content">
+        <h2 class="perfil-name">Ing. Juan Chavez</h2>
+        <p class="perfil-title">
+          Magíster en Gestión de Seguridad de la Información
+        </p>
+
+        <p class="perfil-description">
+          Con más de <strong>8 años de experiencia</strong> como Ingeniero en Sistemas
+          y especialista en seguridad. Ofrezco servicios profesionales como DPO para
+          garantizar que tu empresa cumpla con la Ley Orgánica de Protección de Datos
+          Personales (LOPDP) de Ecuador.
+        </p>
+
+        <div class="perfil-tags">
+          <span class="perfil-tag">🎓 Maestría en Seguridad</span>
+          <span class="perfil-tag">🛡️ Normativa LOPDP</span>
+          <span class="perfil-tag">💼 Auditoría de TI</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="contacto" class="contact-section">
+  <div class="container contact-container text-center">
+
+    <h2 class="contact-title">Contáctame hoy mismo</h2>
+    <p class="contact-subtitle">
+      Cumplir con la ley también es proteger la confianza de tus clientes.
+      No esperes al 31 de diciembre.
+    </p>
+
+    <div class="contact-grid">
+
+      <!-- Email -->
+      <a
+        href="mailto:juanchavez123@hotmail.es"
+        class="contact-card contact-card-email"
+      >
+        <div class="contact-icon email">
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+
+        <span class="contact-label">Correo Electrónico</span>
+        <span class="contact-value">juanchavez123@hotmail.es</span>
+
+        <button
+          class="contact-action"
+          (click)="copyToClipboard($event, 'juanchavez123@hotmail.es')"
+        >
+          Copiar
+        </button>
+      </a>
+
+      <!-- Teléfono -->
+      <a
+        href="tel:+593969743150"
+        class="contact-card contact-card-phone"
+      >
+        <div class="contact-icon phone">
+          <i class="fa-solid fa-phone"></i>
+        </div>
+
+        <span class="contact-label">Llamar / WhatsApp</span>
+        <span class="contact-value">0969743150</span>
+        <span class="contact-status">Disponible ahora</span>
+      </a>
+
+    </div>
+
+    <!-- Toast -->
+    <div id="toast" class="contact-toast">
+      Copiado al portapapeles
+    </div>
+
+  </div>
+</section>
