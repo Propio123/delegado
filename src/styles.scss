@@ -1,3 +1,7 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 :root {
   --color-bg-light: #f9fafb;        /* blanco suave */
   --color-bg-card: #ffffff;
