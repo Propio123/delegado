@@ -1,13 +1,25 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-politica',
   standalone: true,
-  imports: [CommonModule],
   templateUrl: './politica.html'
 })
-export class PoliticaComponent {
-  lastUpdate = 'Marzo 2025';
+export class PoliticaComponent implements OnInit {
+  lastUpdated = 'enero 2026';
+
+  constructor(
+    private title: Title,
+    private meta: Meta
+  ) {}
+
+  ngOnInit() {
+    this.title.setTitle('Política de Privacidad | DPO Ecuador');
+
+    this.meta.updateTag({
+      name: 'description',
+      content: 'Conoce la política de privacidad y tratamiento de datos personales conforme a la LOPDP en Ecuador.'
+    });
+  }
 }
 
