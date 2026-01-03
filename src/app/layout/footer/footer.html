@@ -1,7 +1,41 @@
-<footer class="bg-dark text-light py-4 text-center">
+<footer class="footer bg-dark text-light pt-5 pb-4">
   <div class="container">
-    <small>
-      © 2024 Juan Chavez – DPO & Seguridad de la Información
-    </small>
+    <div class="row">
+
+      <!-- BRAND -->
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold">DPO Ecuador</h5>
+        <p class="text-muted small">
+          Servicios profesionales de Delegado de Protección de Datos (DPO)
+          para empresas en Ecuador. Cumplimiento LOPDP y seguridad de la información.
+        </p>
+      </div>
+
+      <!-- LINKS -->
+      <div class="col-md-4 mb-4">
+        <h6 class="fw-bold">Enlaces</h6>
+        <ul class="list-unstyled">
+          <li><a href="#inicio" class="footer-link">Inicio</a></li>
+          <li><a href="#servicios" class="footer-link">Servicios</a></li>
+          <li><a href="#contacto" class="footer-link">Contacto</a></li>
+          <li><a routerLink="/politica" class="footer-link">Política de Privacidad</a></li>
+        </ul>
+      </div>
+
+      <!-- CONTACT -->
+      <div class="col-md-4 mb-4">
+        <h6 class="fw-bold">Contacto</h6>
+        <p class="small mb-1">📧 juanchavez123@hotmail.es</p>
+        <p class="small mb-1">📞 +593 96 974 3150</p>
+        <p class="small text-muted">Atención a nivel nacional</p>
+      </div>
+
+    </div>
+
+    <hr class="border-secondary">
+
+    <div class="text-center small text-muted">
+      © {{ currentYear }} DPO Ecuador · Cumplimiento LOPDP
+    </div>
   </div>
 </footer>

@@ -22,22 +22,6 @@
 </section>
 
 
-<!-- SERVICIOS -->
-<section id="servicios" class="py-5">
-  <div class="container">
-    <h2 class="text-center fw-bold mb-5">Servicios</h2>
-
-  <section class="services container my-5">
-  <div class="row">
-    <div class="col-md-4" *ngFor="let service of services">
-      <app-service-card [service]="service"></app-service-card>
-    </div>
-  </div>
-</section>
-
-  </div>
-</section>
-
 <!-- Perfil Profesional -->
    <section id="perfil" class="perfil-section">
   <div class="container">
@@ -70,15 +54,104 @@
     </div>
   </div>
 </section>
+<!-- LODPD -->
+<section id="lopdp" class="py-5 bg-light">
+  <div class="container">
 
+    <div class="text-center mb-5">
+      <h6>📋 Base legal</h6>
+      <h2 class="fw-bold">¿Qué exige la Ley de Protección de Datos en Ecuador?</h2>
+      <p class="text-muted mb-0">
+        La LOPDP establece obligaciones claras para todas las empresas
+        que tratan datos personales.
+      </p>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-3">
+        <div class="lopdp-card h-100">
+          <h6>📋 Base legal</h6>
+          <p>
+            Todo tratamiento debe tener una base legal válida
+            (consentimiento, obligación legal, contrato, etc.).
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="lopdp-card h-100">
+          <h6>🛡️ Medidas de seguridad</h6>
+          <p>
+            Las empresas deben aplicar medidas técnicas y organizativas
+            para proteger los datos personales.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="lopdp-card h-100">
+          <h6>👤 Derechos del titular</h6>
+          <p>
+            Acceso, rectificación, eliminación, oposición y portabilidad
+            de los datos personales.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="lopdp-card h-100">
+          <h6>⚖️ Delegado de Protección de Datos</h6>
+          <p>
+            Algunas organizaciones deben designar un DPO
+            responsable del cumplimiento normativo.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-5">
+      <a href="#contacto" class="btn btn-primary btn-lg">
+        Evalúa el cumplimiento de tu empresa
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios" class="py-5" margin-top="20px">
+  <div class="container">
+   <h2 class="text-center fw-bold mb-5">Servicios de DPO para empresas en Ecuador</h2>
+
+  <section class="services container my-5">
+  
+  <div class="row">
+     <p>
+  Ayudo a empresas, pymes y profesionales independientes a cumplir la
+  normativa de protección de datos personales, evitando sanciones y
+  fortaleciendo la confianza de sus clientes.
+</p>
+    <div class="col-md-4" *ngFor="let service of services">
+       
+      <app-service-card [service]="service"></app-service-card>
+    </div>
+  </div>
+</section>
+
+  </div>
+</section>
+
+<!-- CONTACTO -->
 
 <section id="contacto" class="contact-section">
   <div class="container contact-container text-center">
 
     <h2 class="contact-title">Contáctame hoy mismo</h2>
     <p class="contact-subtitle">
-      Cumplir con la ley también es proteger la confianza de tus clientes.
-      No esperes al 31 de diciembre.
+       El cumplimiento de la LOPDP no es solo una obligación legal, es una
+  oportunidad para fortalecer la confianza de clientes, proveedores y aliados.
     </p>
 
     <div class="contact-grid">

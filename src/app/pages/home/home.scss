@@ -290,4 +290,23 @@
     opacity: 1;
   }
 }
+.lopdp-card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
 
+  h6 {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+}
+.lopdp-card {
+  text-align: center;
+}

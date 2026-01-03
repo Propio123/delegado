@@ -41,6 +41,7 @@ export class HomeComponent implements AfterViewInit {
       icon: 'bi bi-mortarboard'
     }
   ];
+  meta: any;
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 
@@ -105,6 +106,10 @@ private showToast(): void {
     }, { threshold: 0.2 });
 
     this.cards.forEach(card => observer.observe(card.nativeElement));
+    this.meta.updateTag({ property: 'og:title', content: 'DPO Ecuador' });
+    this.meta.updateTag({ property: 'og:description', content: 'Servicios DPO en Ecuador' });
+    this.meta.updateTag({ property: 'og:url', content: 'https://tusitio.netlify.app' });
+
   }
 }
 

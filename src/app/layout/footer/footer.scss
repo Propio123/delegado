@@ -1,8 +1,11 @@
-h1, h2, h3 {
-  color: var(--color-text-dark);
-}
+.footer {
+  .footer-link {
+    color: #adb5bd;
+    text-decoration: none;
 
-.btn-primary {
-  background-color: var(--color-primary);
-  border-color: var(--color-primary);
+    &:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+  }
 }

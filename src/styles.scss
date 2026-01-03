@@ -42,6 +42,9 @@
 .btn-secondary:hover {
   background-color: var(--btn-secondary-hover);
 }
+section {
+  scroll-margin-top: 80px; // altura del navbar
+}
 
 
 body {

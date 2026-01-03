@@ -16,9 +16,11 @@ import { PoliticaComponent } from "./pages/politica/politica";
     Footer,
     CookieBannerComponent
 ],
+
   templateUrl: './app.html',
   styleUrls: ['./app.scss']
 })
+
 export class App{
    constructor(
     private title: Title,
@@ -29,6 +31,8 @@ export class App{
       name: 'description',
       content: 'Servicios profesionales de Delegado de Protección de Datos (DPO) en Ecuador. Cumplimiento LOPDP y asesoría especializada.'
     });
+    
 }
+
 }
 
