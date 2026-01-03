@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://elegant-shortbread-4ed25b.netlify.app//sitemap.xml
