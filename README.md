@@ -1,59 +1,28 @@
-# DpoLanding
+# 🛡️ DPO Compliance Suite | Data Protection Officer Landing
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.4.
+[![Angular](https://img.shields.io/badge/Angular-21.0.4-DD0031?style=flat&logo=angular)](https://angular.io/)
+[![Status](https://img.shields.io/badge/Status-Deployed-success?style=flat)](https://netlify.com/)
+[![License](https://img.shields.io/badge/Focus-Data%20Privacy%20%26%20Security-blue)](https://www.gob.ec/ley-organica-proteccion-datos-personales)
 
-## Development server
+### 🚀 Visión General
+Esta plataforma es una solución profesional para la gestión de servicios de **Delegación de Protección de Datos (DPO)**. Está diseñada para conectar la infraestructura técnica con los marcos legales de privacidad (GDPR / LOPDP), ofreciendo una interfaz clara y segura para empresas que requieren cumplimiento normativo de alto nivel.
 
-To start a local development server, run:
+### 👨‍💻 Perfil del Desarrollador & Consultor
+* **Ingeniero de Sistemas** con **Maestría en Gestión de Seguridad de la Información**.
+* **Arquitecto de Redes:** Fundador de 3 ISPs y experto en diseño GPON.
+* **Especialista en Cumplimiento:** Consultor activo para empresas de seguridad y telecomunicaciones en la implementación de políticas de privacidad.
 
-```bash
-ng serve
-```
+---
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 🛠️ Stack Tecnológico
+* **Framework:** Angular v21.0.4 (Arquitectura basada en componentes).
+* **Testing:** Vitest para pruebas unitarias de alta velocidad.
+* **Deployment:** CI/CD integrado con Netlify.
 
-## Code scaffolding
+## ⚙️ Configuración y Desarrollo
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Si deseas replicar este entorno localmente o auditar el código:
 
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+1. **Instalación de dependencias:**
+   ```bash
+   npm install
